@@ -1,16 +1,16 @@
-#Para rodar a aplicação
+# Para rodar a aplicação
 
-##Instalar as dependências
+## Instalar as dependências
 ```json
 npm install
 ```
 
-##Rodar em DEV
+## Rodar em DEV
 ```json
 npm run dev
 ```
 
-##Rodar em PROD
+## Rodar em PROD
 ```json
 npm run start
 ```
