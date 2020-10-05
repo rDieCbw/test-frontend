@@ -1,0 +1,33 @@
+{% extends '../layouts/basic.twig' %}
+{% spaceless %}
+{% block headCss %}
+    <link rel="stylesheet" href="{{ RESOURCES_STATIC_PATH }}/css/index.css" />
+{% endblock %}
+{% block headScript %}
+    <script src="{{ RESOURCES_STATIC_PATH }}/js/index.js"></script>
+{% endblock %}
+{% block body %}
+    <section id="hero">
+        <h1>Simulador Ciclic</h1>
+    </section>
+    <section id="simulator">
+        <form action="/simular" method="GET">
+            <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" name="name">
+            </div>
+            <div class="input-wrapper">
+                <label for="monthValue">Mensalidade</label>
+                <input type="text" name="monthValue">
+            </div>
+            <div class="input-wrapper">
+                <label for="period">Tempo (em anos)</label>
+                <input type="number" name="period">
+            </div>
+            <button type="submit">Simular</button>
+        </form>
+    </section>
+{% endblock %}
+{% block footerScript %}
+{% endblock footerScript %}
+{% endspaceless %}

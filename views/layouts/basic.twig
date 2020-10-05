@@ -1,0 +1,16 @@
+{% spaceless %}
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        {% include "./partials/head.twig" %}
+        {% block headCss %}{% endblock headCss %}
+        {% block headScript %}{% endblock headScript %}
+    </head>
+    <body>
+        {% include "./partials/header.twig" %}
+        {% block body %}{% endblock body %}
+        {% include "./partials/footer.twig" %}
+        {% block footerScript %}{% endblock footerScript %}
+    </body>
+    </html>
+{% endspaceless %}

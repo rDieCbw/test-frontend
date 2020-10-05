@@ -1,0 +1,25 @@
+{% extends '../layouts/basic.twig' %}
+{% spaceless %}
+{% block headCss %}
+    <link rel="stylesheet" href="{{ RESOURCES_STATIC_PATH }}/css/result.css" />
+{% endblock %}
+{% block headScript %}
+    <script src="{{ RESOURCES_STATIC_PATH }}/js/index.js"></script>
+{% endblock %}
+{% block body %}
+    <section id="hero">
+        <h1>Resultado da simulação</h1>
+    </section>
+    <section id="result">
+        <div class="card">
+            <p>Olá! <span>{{ context.name }}</span>, <br>
+            juntando <span>{{ context.monthValue }}</span> todo mês <br>
+            você terá <span>{{ context.result }}</span> <br> 
+            em <span>{{ context.period }}</span> anos <br></p>
+            <a href="/" title="Simulador Ciclic">Simular novamente</a>
+        </div>
+    </section>
+{% endblock %}
+{% block footerScript %}
+{% endblock footerScript %}
+{% endspaceless %}

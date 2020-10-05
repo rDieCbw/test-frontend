@@ -1,0 +1,43 @@
+{
+  "name": "test-frontend-ciclic",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"node app.js\" \"gulp build\"",
+    "dev": "concurrently \"supervisor -i src/**/*.* -e html,twig,helpers/*.*,routes/*.*,app.js app.js\" \"gulp dev-build\""
+  },
+  "engines": {
+    "node": "14.11.0"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "connect-memcached": "^1.0.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dompurify": "^2.0.7",
+    "express": "~4.16.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.3",
+    "hpp": "^0.2.2",
+    "http-errors": "~1.6.3",
+    "jsdom": "^15.2.1",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0",
+    "twig": "^1.15.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.13.1",
+    "node-sass-middleware": "0.11.0",
+    "concurrently": "^5.2.0",
+    "supervisor": "^0.12.0"
+  }
+}

@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #33ab96;
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
