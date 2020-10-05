@@ -1,3 +1,22 @@
+#Para rodar a aplicação
+
+##Instalar as dependências
+```json
+npm install
+```
+
+##Rodar em DEV
+```json
+npm run dev
+```
+
+##Rodar em PROD
+```json
+npm run start
+```
+
+
+
 # Teste dos fronts
 
 Construa uma aplicação que fará uma simulação de investimento utilizando juros composto. A aplicação terá duas telas:
